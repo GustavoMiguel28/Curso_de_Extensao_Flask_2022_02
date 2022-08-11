@@ -7,5 +7,14 @@
 <html>
     <body>
         Olá, {{n}}! Vamos usar o Jinja2 para arquivos HTML.
+
+        <table border="1">
+            {% for prod in aProdutos %}
+            <tr>
+                <td>{{prod.nome}}</td>
+                <td>{{prod.preco}}</td>
+            </tr>
+            {% endfor %}
+        </table>
     </body>
 </html>
